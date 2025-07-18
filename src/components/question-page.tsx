@@ -1,76 +1,102 @@
-// components/QuestionPage.tsx
-import { ChevronRight } from 'lucide-react';
+import { ChevronLeft } from "lucide-react";
+import { useState } from "react";
+import type { QuestionData, QuestionOption } from "../data/question-data";
 
 interface QuestionPageProps {
-  questionKey: string;
-  question: any;
-  onAnswer: (questionKey: string, answer: any) => void;
-  resetQuiz: () => void;
-  currentStepNum: number;
-  totalSteps: number;
+	questionKey: string;
+	question: QuestionData;
+	onAnswer: (questionKey: string, answer: QuestionOption) => void;
+	resetQuiz: () => void;
+	currentStepNum: number;
+	totalSteps: number;
 }
 
 const QuestionPage = ({
-  questionKey,
-  question,
-  onAnswer,
-  resetQuiz,
-  currentStepNum,
-  totalSteps,
+	questionKey,
+	question,
+	onAnswer,
+	resetQuiz,
+	currentStepNum,
+	totalSteps,
 }: QuestionPageProps) => {
-  if (!question) return null;
+	const [selected, setSelected] = useState<QuestionOption | null>(null);
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-2xl w-full">
-        {/* 진행률 */}
-        <div className="mb-6">
-          <div className="flex justify-between text-sm text-gray-500 mb-2">
-            <span>진행률</span>
-            <span>{currentStepNum}/{totalSteps}</span>
-          </div>
-          <div className="w-full bg-gray-200 h-2 rounded-full">
-            <div
-              className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-500"
-              style={{ width: `${(currentStepNum / totalSteps) * 100}%` }}
-            />
-          </div>
-        </div>
+	const handleNext = () => {
+		if (selected) {
+			onAnswer(questionKey, selected);
+		}
+	};
 
-        {/* 질문 */}
-        <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-800 mb-4">
-          {question.title}
-        </h2>
+	return (
+		<div className="h-svh bg-[#F9FAFB] flex items-center justify-center ">
+			<div className="w-full h-full bg-white rounded-2xl shadow-lg px-6 py-8 flex flex-col justify-between">
+				{/* 상단 바 */}
+				<div>
+					<button
+						type="button"
+						onClick={resetQuiz}
+						aria-label="뒤로 가기"
+						className="text-gray-600 mb-4"
+					>
+						<ChevronLeft size={28} />
+					</button>
 
-        {/* 선택지 */}
-        <div className="space-y-4">
-          {question.options.map((option: any, idx: number) => (
-            <button
-              key={idx}
-              onClick={() => onAnswer(questionKey, option)}
-              className="w-full p-4 text-left border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition transform hover:scale-105 group"
-            >
-              <div className="flex items-center">
-                {option.icon && <span className="text-2xl mr-4">{option.icon}</span>}
-                <div>
-                  <p className="font-semibold text-gray-800 group-hover:text-blue-600">{option.text}</p>
-                  {option.subtitle && <p className="text-sm text-gray-500 group-hover:text-blue-500">{option.subtitle}</p>}
-                </div>
-                <ChevronRight className="ml-auto text-gray-400 group-hover:text-blue-600" size={20} />
-              </div>
-            </button>
-          ))}
-        </div>
+					{/* 진행률 */}
+					<div className="w-full bg-gray-200 h-2 rounded-full mb-6">
+						<div
+							className="bg-blue-500 h-2 rounded-full transition-all duration-500"
+							style={{ width: `${(currentStepNum / totalSteps) * 100}%` }}
+						/>
+					</div>
 
-        {/* 다시하기 */}
-        <div className="text-center mt-8">
-          <button onClick={resetQuiz} className="text-gray-500 hover:text-gray-700 transition-colors duration-300">
-            처음부터 다시하기
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+					{/* 질문 */}
+					<h2 className="text-3xl text-center font-extrabold text-gray-900 mt-50 mb-2 leading-snug whitespace-pre-line">
+						{question.title}
+					</h2>
+					<p className="text-lg text-center text-gray-500 mb-6">
+						질문에 답하면서 나와 딱! 맞는 구단을 확인해보세요.
+					</p>
+				</div>
+
+				{/* 선택지 */}
+				<div className="flex flex-col gap-4">
+					{question.options.map((option) => (
+						<button
+							key={option.text}
+							type="button"
+							onClick={() => setSelected(option)}
+							className={`h-20 flex items-center justify-center w-full border text-2xl font-medium rounded-xl px-5 py-4 transition ${
+								selected?.text === option.text
+									? "border-blue-500 bg-blue-50 text-blue-700"
+									: "border-gray-200 bg-white text-gray-800"
+							}`}
+						>
+							{option.icon && (
+								<span className="text-2xl mr-3">{option.icon}</span>
+							)}
+							{option.text}
+						</button>
+					))}
+				</div>
+
+				{/* 다음 버튼 */}
+				<div className="mt-10">
+					<button
+						type="button"
+						onClick={handleNext}
+						disabled={!selected}
+						className={`w-full h-20 py-4 rounded-xl text-white text-2xl font-semibold transition ${
+							selected
+								? "bg-blue-600 hover:bg-blue-700"
+								: "bg-gray-300 cursor-not-allowed"
+						}`}
+					>
+						다음으로
+					</button>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default QuestionPage;
