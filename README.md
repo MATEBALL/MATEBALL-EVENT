@@ -32,11 +32,9 @@
 
 ### 이미 응원하는 구단이 있다면?
 
-<div align="center" style="margin: 30px 0; padding: 20px; border: 2px solid #1263FF; border-radius: 12px; background-color: #E7EFFF;">
-  <a href="https://www.mateball.co.kr" style="font-size: 24px; font-weight: bold; text-decoration: none; color: #1263FF;">
-    🔗 나와 딱! 맞는 직관 메이트 찾으러 가기
-  </a>
-</div>
+<a href="https://www.mateball.co.kr">
+  <img src="./src/assets/image.png" alt="나와 딱! 맞는 직관 메이트 찾으러 가기" width="450" style="border-radius: 7px;>
+</a>
 
 
 <br />
