@@ -28,15 +28,16 @@
 
 ⚾ 야구가 낯설어도 괜찮아요. 캐릭터와 질문으로 가볍게 즐길 수 있어요. 친구들과 함께 테스트해서 나와 잘 맞는 구단을 비교해보세요.
 
-<br />
+<br>
 
 ### 이미 응원하는 구단이 있다면?
 
 <a href="https://www.mateball.co.kr">
-  <img src="./src/assets/image.png" alt="나와 딱! 맞는 직관 메이트 찾으러 가기" width="450" style="border-radius: 7px;>
+  <img src="./src/assets/image.png" alt="나와 딱! 맞는 직관 메이트 찾으러 가기" width="450" style="border-radius: 7px;">
 </a>
 
-
-<br />
+<br>
+<br>
 
 [![메잇볼 깃허브 구경 가기](https://img.shields.io/badge/메잇볼_깃허브_구경_가기-1263FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/MATEBALL/MATEBALL-CLIENT)
+
