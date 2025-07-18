@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+## <img src="./src/assets/cute.svg" alt="메잇볼" width="30" style="vertical-align: middle; margin-right: 4px;"> 메잇볼 (Mateball)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **나에게 꼭 맞는 야구 구단을 찾아보자!**
+>
+> 가볍게 즐기는 **퍼스널 구단 테스트 사이트**
 
-Currently, two official plugins are available:
+### [테스트 하러 가기](https://mateball.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+  <video src="./src/assets/video.mp4" controls width="300" style="border-radius: 12px; overflow: hidden;"></video>
+</div>
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 소개
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+야구 팬 또는 입문자를 위해 개발된 **개인 맞춤형 구단 테스트**입니다.
+간단한 질문에 답하면서 나와 잘 맞는 야구 구단을 찾고, 관련 캐릭터와 매칭된 결과를 재미있게 확인할 수 있습니다.
+테스트를 시작하고 **나의 야구 구단**을 찾아보세요!
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### "어느 팀부터 응원할지 모르겠다면, 지금 바로 메잇볼!"
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 퍼스널 구단 테스트는?
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **초간단 테스트** – 몇 개의 질문으로 바로 결과 확인이 가능해요!
+* **귀여운 일러스트** – 보는 재미가 있는 캐릭터들이 있어요!
+* **SNS 공유** – 결과를 친구들과 간편하게 공유할 수 있어요!
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚾ 야구가 낯설어도 괜찮아요. 캐릭터와 질문으로 가볍게 즐길 수 있어요. 친구들과 함께 테스트해서 나와 잘 맞는 구단을 비교해보세요.
+
+<br />
+
+### 이미 응원하는 구단이 있다면?
+
+<div align="center" style="margin: 30px 0; padding: 20px; border: 2px solid #1263FF; border-radius: 12px; background-color: #E7EFFF;">
+  <a href="https://www.mateball.co.kr" style="font-size: 24px; font-weight: bold; text-decoration: none; color: #1263FF;">
+    🔗 나와 딱! 맞는 직관 메이트 찾으러 가기
+  </a>
+</div>
+
+
+<br />
+
+[![메잇볼 깃허브 구경 가기](https://img.shields.io/badge/메잇볼_깃허브_구경_가기-1263FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/MATEBALL/MATEBALL-CLIENT)
