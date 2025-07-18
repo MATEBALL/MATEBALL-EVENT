@@ -53,7 +53,7 @@ const BaseballTeamMatcher = () => {
   };
 
   return (
-    <div className="font-sans">
+    <div className='w-full h-full'>
       {currentStep === 'landing' && <LandingPage onStart={() => setCurrentStep('start')} />}
       {currentStep === 'result' && (
         <ResultPage teamKey={result!} teams={teams} resetQuiz={resetQuiz} shareResult={shareResult} />
