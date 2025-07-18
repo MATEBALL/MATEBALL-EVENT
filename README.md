@@ -9,7 +9,7 @@
 
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
-  <video src="./src/assets/video.mp4" controls width="300" style="border-radius: 12px; overflow: hidden;"></video>
+  <img src="./src/assets/gif.gif" controls width="300" style="border-radius: 12px; overflow: hidden;"></img>
 </div>
 
 ### 소개
