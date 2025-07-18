@@ -46,7 +46,7 @@ export const teams = {
 		name: "SSG 랜더스",
 		color: "bg-orange-500",
 		description:
-			"솔직한 당신!\n 치킨이 야채보다 맛있다는 걸 인정하는 정직한 성격이에요.",
+			"우승 DNA와 화려한 선수진!\n 당신의 스타일과 닮은 구단입니다.",
 	},
 	kt: {
 		name: "KT 위즈",
