@@ -102,8 +102,8 @@ export const questions: Record<string, QuestionData> = {
 		title:
 			"여유롭게 이기고 있었는데 \n화장실 갔다 온 사이에 역전된 상황에서 나는?",
 		options: [
-			{ text: "분노한다", value: "passionate_angry" },
-			{ text: "더 열심히 응원한다", value: "passionate_cheer" },
+			{ text: "분노한다", value: "passionate_angry", icon: "🔥", },
+			{ text: "더 열심히 응원한다", value: "passionate_cheer", icon: "🎉", },
 		],
 	},
 	foodie: {
@@ -112,9 +112,10 @@ export const questions: Record<string, QuestionData> = {
 			{
 				text: "화가 나지만 맥주 한 캔 마시면 진정 가능",
 				value: "calm_with_beer",
+                icon: "🍺",
 			},
-			{ text: "침착하게 응원한다", value: "calm_support" },
-			{ text: "일희일비한다 이러지마 제발...", value: "emotional" },
+			{ text: "침착하게 응원한다", value: "calm_support", icon: "🎉", },
+			{ text: "일희일비한다 이러지마 제발...", value: "emotional", icon: "😭", },
 		],
 	},
 	focused: {
@@ -123,44 +124,45 @@ export const questions: Record<string, QuestionData> = {
 			{
 				text: "화가 나지만 맥주 한 캔 마시면 진정 가능",
 				value: "calm_with_beer",
+                icon: "🍺",
 			},
-			{ text: "침착하게 응원한다", value: "calm_support" },
-			{ text: "일희일비한다 이러지마 제발...", value: "emotional" },
+			{ text: "침착하게 응원한다", value: "calm_support",icon: "🎉", },
+			{ text: "일희일비한다 이러지마 제발...", value: "emotional" , icon: "😭", },
 		],
 	},
 	passionate_angry: {
 		title: "실책으로 게임이 깨졌다...",
 		options: [
-			{ text: "야구 안 본다 다짐함", team: "samsung" },
-			{ text: "화가 나지만 참는다", team: "lotte" },
+			{ text: "야구 안 본다 다짐함", team: "samsung", icon: "😠",  },
+			{ text: "화가 나지만 참는다", team: "lotte", icon: "😤",  },
 		],
 	},
 	passionate_cheer: {
 		title: "직관 갔는데 11:0으로 졌다",
 		options: [
-			{ text: "직관 그 자체 의미 있음", team: "kia" },
-			{ text: "중계로 볼걸 그랬다", team: "lg" },
+			{ text: "직관 그 자체 의미 있음", team: "kia", icon: "😀" },
+			{ text: "중계로 볼걸 그랬다", team: "lg", icon: "😥"},
 		],
 	},
 	calm_with_beer: {
 		title: "치킨 엎고 중요한 순간이다!",
 		options: [
-			{ text: "치킨 다시 산다", team: "doosan" },
-			{ text: "치킨보다 경기 집중", team: "ssg" },
+			{ text: "치킨 다시 산다", team: "doosan", icon: "🐔"},
+			{ text: "치킨보다 경기 집중", team: "ssg", icon: "👓" },
 		],
 	},
 	calm_support: {
 		title: "마무리 수비 실수로 연장 진행!",
 		options: [
-			{ text: "납득 안 됨", team: "kt" },
-			{ text: "그래도 지켜본다", team: "hanwha" },
+			{ text: "납득 안 됨", team: "kt" , icon: "😥"},
+			{ text: "그래도 지켜본다", team: "hanwha" , icon: "👓"},
 		],
 	},
 	emotional: {
 		title: "1회 초 10점 내줌",
 		options: [
-			{ text: "바로 집 간다", team: "nc" },
-			{ text: "희망 놓지 않고 끝까지", team: "kiwoom" },
+			{ text: "바로 집 간다", team: "nc", icon: "😠",  },
+			{ text: "희망 놓지 않고 끝까지", team: "kiwoom", icon: "☺️",  },
 		],
 	},
 };
