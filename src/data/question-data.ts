@@ -1,54 +1,53 @@
-// data/question-data.ts
 export const teams = {
   samsung: {
     name: '삼성 라이온즈',
     color: 'bg-blue-600',
-    description: '차분하고 이성적인 당신! 감정보다는 냉정한 분석을 선호하는 타입입니다.',
+    description: '차분하고 이성적인 당신!\n감정보다는 냉정한 분석을 선호하는 타입입니다.',
   },
   lotte: {
     name: '롯데 자이언츠',
     color: 'bg-red-500',
-    description: '열정적이지만 현실적인 당신! 때로는 감정이 앞서지만 그것도 매력이에요.',
+    description: '열정적이지만 현실적인 당신!\n때로는 감정이 앞서지만 그것도 매력이에요.',
   },
   kia: {
     name: 'KIA 타이거즈',
     color: 'bg-red-600',
-    description: '승부에 집중하는 프로페셔널한 당신! 야구 자체의 재미를 아는 진정한 팬입니다.',
+    description: '승부에 집중하는 프로페셔널한 당신!\n야구 자체의 재미를 아는 진정한 팬입니다.',
   },
   lg: {
     name: 'LG 트윈스',
     color: 'bg-pink-500',
-    description: '편안함을 추구하는 당신! 집에서 중계로 보는 것도 나쁘지 않다고 생각해요.',
+    description: '편안함을 추구하는 당신!\n집에서 중계로 보는 것도 나쁘지 않다고 생각해요.',
   },
   doosan: {
     name: '두산 베어스',
     color: 'bg-blue-900',
-    description: '먹방이 우선인 당신! 야구장은 맛있는 음식을 먹으러 가는 곳이기도 하죠.',
+    description: '먹방이 우선인 당신!\n야구장은 맛있는 음식을 먹으러 가는 곳이기도 하죠.',
   },
   ssg: {
     name: 'SSG 랜더스',
     color: 'bg-orange-500',
-    description: '솔직한 당신! 치킨이 야채보다 맛있다는 걸 인정하는 정직한 성격이에요.',
+    description: '솔직한 당신!\n치킨이 야채보다 맛있다는 걸 인정하는 정직한 성격이에요.',
   },
   kt: {
     name: 'KT 위즈',
     color: 'bg-gray-800',
-    description: '세심한 관찰력을 가진 당신! 선수들의 작은 움직임까지 놓치지 않는 눈을 가졌어요.',
+    description: '세심한 관찰력을 가진 당신!\n선수들의 작은 움직임까지 놓치지 않는 눈을 가졌어요.',
   },
   hanwha: {
     name: '한화 이글스',
     color: 'bg-orange-600',
-    description: '응원의 힘을 믿는 당신! 내가 응원해야 팀이 이긴다고 생각하는 진정한 팬입니다.',
+    description: '응원의 힘을 믿는 당신!\n내가 응원해야 팀이 이긴다고 생각하는 진정한 팬입니다.',
   },
   nc: {
     name: 'NC 다이노스',
     color: 'bg-blue-400',
-    description: '현실적인 당신! 때로는 빠른 포기도 지혜라는 걸 아는 실용적인 성격이에요.',
+    description: '현실적인 당신!\n때로는 빠른 포기도 지혜라는 걸 아는 실용적인 성격이에요.',
   },
   kiwoom: {
     name: '키움 히어로즈',
     color: 'bg-purple-600',
-    description: '끈기 있는 당신! 끝까지 포기하지 않고 응원하는 진정한 승부사입니다.',
+    description: '끈기 있는 당신!\n끝까지 포기하지 않고 응원하는 진정한 승부사입니다.',
   },
 };
 
